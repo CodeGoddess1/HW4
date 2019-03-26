@@ -1,0 +1,29 @@
+<script>
+    function GetVolume(L,W,H){
+        results=L*W*H;
+        return results;
+    }
+   function Main(){      
+       for (var i=1; i<=10; i++)  {
+     
+    var volume=GetVolume
+        (i+2,i+3,i+4);
+    
+    switch (true){     
+        case (volume<=500 && volume <559):
+        document.write('Small Volume:'+ volume+'<br/>');
+        break;
+        case (volume<=1000 && volume <500):
+        document.write('Medium Volume:'+ volume+'<br/>');
+        break;
+        case (volume<=1500 && volume <1000):
+        document.write('Large Volume:'+ volume+'<br/>');
+        break;
+        case (volume>=1501):
+        document.write('Extra Large:'+ volume+'<br/>');
+        break;  } }  }
+   
+        Main();
+</script>
+
+
